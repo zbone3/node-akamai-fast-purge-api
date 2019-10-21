@@ -1,0 +1,36 @@
+{
+  "name": "akamai-fast-purge-api",
+  "version": "1.0.0",
+  "description": "A simple unofficial Akamai Fast Purge v3 API wrapper for NodeJS",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc --build",
+    "watch": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zbone3/node-akamai-fast-purge-api.git"
+  },
+  "keywords": [
+    "Akamai",
+    "Fast",
+    "Purge",
+    "API",
+    "CCU"
+  ],
+  "author": "Ziv Eli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zbone3/node-akamai-fast-purge-api/issues"
+  },
+  "homepage": "https://github.com/zbone3/node-akamai-fast-purge-api#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "edgegrid": "^3.0.8"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/node": "^12.11.1",
+    "typescript": "^3.6.4"
+  }
+}

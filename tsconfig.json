@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "sourceRoot": "src",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "skipDefaultLibCheck": true,
+    "resolveJsonModule": true,
+    "target": "esnext",
+    "diagnostics": true,
+    "strict": true,
+    "downlevelIteration": true,
+    "outDir": "./dist",
+    "sourceMap": true,
+    "lib": [
+      "es5",
+      "es6",
+      "es7",
+      "es2017",
+      "es2018"
+    ],
+    "noImplicitAny": false,
+    "allowJs": true
+  },
+  "compileOnSave": true,
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/**/*.test.ts"
+  ]
+}
