@@ -1,6 +1,9 @@
 # node-akamai-fast-purge-api
 A simple unofficial Akamai Fast Purge v3 API wrapper for NodeJS
 
+## Installation
+
+``npm i akamai-fast-purge``
 ## Prerequisites
 In order to access Akamai's Fast Purge API (CCU v3), you must first create an API key on https://control.akamai.com and authorize it to access Open CCU / Fast Purge APIs.
 
