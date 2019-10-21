@@ -25,7 +25,6 @@
   },
   "homepage": "https://github.com/zbone3/node-akamai-fast-purge-api#readme",
   "dependencies": {
-    "axios": "^0.19.0",
     "edgegrid": "^3.0.8"
   },
   "devDependencies": {
