@@ -31,7 +31,8 @@ export class FastPurgeHTTP {
 
   constructor (authObject: APIAuth, networkType: networkTypes) {
     const { clientToken, clientSecret, accessToken, baseUri } = authObject
-    this.edgeGridAPI = new EdgeGrid(clientToken, clientSecret, accessToken, baseUri)
+    const patchedBaseUri = baseUri.endsWith('/') ? baseUri : `${baseUri}/`
+    this.edgeGridAPI = new EdgeGrid(clientToken, clientSecret, accessToken, patchedBaseUri)
     this.networkType = networkType
   }
 

@@ -7,27 +7,27 @@ export class AkamaiFP {
     this.fastPurgeAPI = new FastPurgeHTTP(apiAuth, networkType)
   }
 
-  invalidateByUrl (urls: string[]) {
-    this.fastPurgeAPI.invalidateByUrl(urls)
+  async invalidateByUrl (urls: string[]) {
+    return this.fastPurgeAPI.invalidateByUrl(urls)
   }
 
-  invalidateByCpCode (cpCodes: string[]) {
-    this.fastPurgeAPI.invalidateByCpCode(cpCodes)
+  async invalidateByCpCode (cpCodes: string[]) {
+    return this.fastPurgeAPI.invalidateByCpCode(cpCodes)
   }
 
-  invalidateByTag (tags: string[]) {
-    this.fastPurgeAPI.invalidateByTag(tags)
+  async invalidateByTag (tags: string[]) {
+    return this.fastPurgeAPI.invalidateByTag(tags)
   }
 
-  deleteByUrl (urls: string[]) {
-    this.fastPurgeAPI.deleteByUrl(urls)
+  async deleteByUrl (urls: string[]) {
+    return this.fastPurgeAPI.deleteByUrl(urls)
   }
 
-  deleteByCpCode (cpCodes: string[]) {
-    this.fastPurgeAPI.deleteByCpCode(cpCodes)
+  async deleteByCpCode (cpCodes: string[]) {
+    return this.fastPurgeAPI.deleteByCpCode(cpCodes)
   }
 
-  deleteByTag (tags: string[]) {
-    this.fastPurgeAPI.deleteByTag(tags)
+  async deleteByTag (tags: string[]) {
+    return this.fastPurgeAPI.deleteByTag(tags)
   }
 }
