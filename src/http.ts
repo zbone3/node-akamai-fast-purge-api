@@ -1,4 +1,4 @@
-import * as EdgeGrid from 'edgegrid'
+import * as EdgeGrid from 'akamai-edgegrid'
 
 const akamaiBaseHTTPConfig = {
   headers: {
